@@ -1,0 +1,55 @@
+# 양평 가족여행 PWA
+
+가족 4명과 소형견 1마리가 함께하는 2026년 양평 2박 3일 여행을 위한 모바일 여행 가이드입니다. 로그인이나 서버 없이 정적 데이터만 사용하며, 일반 웹사이트와 설치형 PWA로 동일하게 사용할 수 있습니다.
+
+## Development
+
+Node.js 22 이상을 권장합니다.
+
+```bash
+npm install
+npm run dev
+```
+
+개발 서버가 안내하는 로컬 주소를 브라우저에서 엽니다.
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+`dist/`에 GitHub Pages에 올릴 정적 파일이 생성됩니다.
+
+## Deploy
+
+`main` 브랜치에 push하면 `.github/workflows/deploy.yml`이 앱을 빌드하고 GitHub Pages에 자동 배포합니다. 저장소의 **Settings → Pages → Source**를 **GitHub Actions**로 선택해야 합니다.
+
+프로젝트 페이지(`https://사용자명.github.io/저장소명/`)와 사용자 페이지(`https://사용자명.github.io/`)를 빌드 시 자동으로 구분해 asset 경로를 설정합니다. 앱 내 화면 전환은 Hash 기반이므로 새로고침 404가 발생하지 않습니다.
+
+## PWA 설치
+
+### Android
+
+Chrome에서 배포 URL 접속 → 메뉴 → **앱 설치** 또는 **홈 화면에 추가**를 선택합니다.
+
+### iPhone
+
+Safari에서 배포 URL 접속 → 공유 → **홈 화면에 추가**를 선택합니다.
+
+설치 후에는 일정, 장소, 주소, 장보기와 준비물 같은 기본 콘텐츠를 오프라인에서도 확인할 수 있습니다. 외부 지도와 날씨는 인터넷 연결이 필요합니다.
+
+## Trip Data
+
+여행 내용은 UI와 분리되어 있습니다.
+
+- `src/data/trip.ts`: 날짜, DAY별 일정, 핵심 동선
+- `src/data/places.ts`: 숙소, 관광지, 식당, 카페, 마트
+- `src/data/preparation.ts`: 장보기, 가족 및 반려견 준비물
+
+데이터를 수정한 뒤 `main`에 push하면 GitHub Pages에 새 버전이 배포됩니다. 설치된 PWA에서 업데이트가 발견되면 새로고침 안내를 표시합니다.
+
+## Privacy
+
+공개 배포를 전제로 가족 이름, 전화번호, 예약번호와 집 상세 주소는 화면에 표시하지 않습니다. 출발지는 `서울 광진구`까지만 노출합니다.
