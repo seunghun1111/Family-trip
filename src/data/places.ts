@@ -14,6 +14,7 @@ export const places: Place[] = [
   { id: 'happy-garden', category: '식당', icon: '🍝', name: '행복한뜰', shortAddress: '경기 양평군 용문면', address: '경기 양평군 용문면 용문로 268-6', day: 3, time: '11:40 ~ 13:10 · 선택', summary: '퇴실 후 가까운 용문에서 파스타와 리소토를 즐기는 애견동반 식당.', tips: ['반려동물 동반 가능', '파스타·그라탱·리소토', '포장 및 주차 가능'], caution: '월요일은 휴무이며 반려견 좌석은 방문 전에 확인하세요.', naverUrl: 'https://map.naver.com/p/entry/place/1147984536', kakaoUrl: 'https://place.map.kakao.com/17898347' },
   { id: 'pet-republic', category: '식당', icon: '🐾', name: '펫리퍼블릭', shortAddress: '경기 양평군 용문면', address: '경기 양평군 용문면 중원산로 521-12', day: 3, time: '11:40 ~ 13:10 · 선택', summary: '반려견 전용 리조트의 레스토랑과 카페를 숙박 없이 이용하는 점심 선택지.', tips: ['레스토랑·카페 이용 가능', '반려견 운동장', '주차 가능'], caution: '영업시간과 레스토랑 이용 가능 여부를 방문 전에 확인하세요.', kakaoUrl: 'https://place.map.kakao.com/1902419558' },
   { id: 'hanaro', category: '마트', icon: '🛒', name: '용문농협 하나로마트 단월점', shortAddress: '경기 양평군 단월면', address: '용문농협 하나로마트 단월점', day: 1, time: '13:40 ~ 14:30', summary: '두 번의 저녁과 아침, 음료·야식을 한 번에 준비.', tips: ['냉장 보관 품목은 마지막에 담기', '준비 탭의 장보기 목록 확인'] },
+  { id: 'hanaro-seorak', category: '마트', icon: '🛒', name: '가평군농협 하나로마트 설악점', shortAddress: '경기 가평군 설악면', address: '경기 가평군 설악면 신천중앙로 112', day: 1, time: '13:40 ~ 14:30 · 선택', summary: '오리덕에서 숙소로 이동하는 길에 들를 수 있는 장보기 선택지.', tips: ['신선식품·음료·간식 한 번에 준비', '냉장 보관 품목은 마지막에 담기', '준비 탭의 장보기 목록 확인'], naverUrl: 'https://naver.me/FUhsaVph' },
 ]
 
 export const placeCategories = ['숙소', '관광', '식당', '카페', '마트'] as const

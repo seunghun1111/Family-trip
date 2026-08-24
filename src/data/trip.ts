@@ -23,7 +23,7 @@ export const tripDays: TripDay[] = [
     items: [
       { time: '09:30', icon: '🚗', title: '서울 광진구 출발', description: '여유 있게 양평으로 출발해요.' },
       { time: '11:00', endTime: '12:30', icon: '🦆', title: '점심 · 오리덕', description: '가족과 반려견이 함께 오리 요리를 즐겨요.', notes: ['애견동반 시 예방접종 확인이 가능한 서류(어플) 준비'], placeId: 'oriduck' },
-      { time: '13:40', endTime: '14:30', icon: '🛒', title: '하나로마트 장보기', description: '두 번의 저녁과 아침, 음료·야식을 준비해요.', placeId: 'hanaro' },
+      { time: '13:40', endTime: '14:30', icon: '🛒', title: '하나로마트 장보기 · 둘 중 선택', description: '가평군농협 설악점 또는 용문농협 단월점 중 이동 동선에 맞춰 골라요.', notes: ['설악점: 오리덕에서 숙소로 이동하며 장보기', '단월점: 숙소 가까이에서 장보기'], placeIds: ['hanaro-seorak', 'hanaro'] },
       { time: '15:00', icon: '🏡', title: '풀빌라 체크인', placeId: 'slowinn' },
       { time: '15:30', endTime: '18:00', icon: '🏊', title: '가족 + 반려견 물놀이', description: '한낮 더위를 피해 숙소에서 시원하게 쉬어요.' },
       { time: '18:00', endTime: '18:30', icon: '🚿', title: '샤워 · 휴식' },
