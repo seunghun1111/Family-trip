@@ -105,6 +105,7 @@ a { color: inherit; text-decoration: none; }
 .timeline-content p { margin: 6px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .timeline-content ul { margin: 7px 0 0; padding-left: 16px; color: #77837e; font-size: 11px; line-height: 1.6; }
 .timeline-content button { margin-top: 9px; padding: 0; border: 0; display: inline-flex; align-items: center; gap: 4px; color: var(--green-2); background: transparent; font-size: 11px; font-weight: 700; cursor: pointer; }
+.timeline-content button + button { margin-left: 10px; }
 .timeline article.current .timeline-rail span { border-color: var(--orange); box-shadow: 0 0 0 4px rgba(233,133,71,.12); }
 .timeline article.current .timeline-content { border-color: rgba(233,133,71,.5); background: #fff8ed; }
 .now-badge { display: inline-block; margin-bottom: 6px; color: var(--orange); font-size: 10px; font-weight: 800; }

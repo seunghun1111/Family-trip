@@ -8,6 +8,7 @@ export type ScheduleItem = {
   description?: string
   notes?: string[]
   placeId?: string
+  placeIds?: string[]
 }
 
 export type TripDay = {
@@ -33,6 +34,8 @@ export type Place = {
   summary: string
   tips: string[]
   caution?: string
+  naverUrl?: string
+  kakaoUrl?: string
 }
 
 export type PackingGroup = {

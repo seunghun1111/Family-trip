@@ -1,5 +1,6 @@
 import { MapPin } from 'lucide-react'
 import { PageHeader } from '../components/PageHeader'
+import { places } from '../data/places'
 import { tripDays } from '../data/trip'
 import { isCurrentItem } from '../utils/date'
 import type { DayNumber } from '../types'
@@ -31,7 +32,10 @@ export function Schedule({ selectedDay, onDayChange, onPlace }: { selectedDay: D
                 <h3>{item.title}</h3>
                 {item.description && <p>{item.description}</p>}
                 {item.notes && <ul>{item.notes.map((note) => <li key={note}>{note}</li>)}</ul>}
-                {item.placeId && <button onClick={() => onPlace(item.placeId!)}><MapPin size={14} /> 장소 보기</button>}
+                {(item.placeIds ?? (item.placeId ? [item.placeId] : [])).map((placeId) => {
+                  const place = places.find((candidate) => candidate.id === placeId)
+                  return <button key={placeId} onClick={() => onPlace(placeId)}><MapPin size={14} /> {place?.name ?? '장소 보기'}</button>
+                })}
               </div>
             </article>
           )

@@ -4,7 +4,11 @@ import { mapLinks } from '../utils/navigation'
 
 export function PlaceSheet({ place, onClose }: { place: Place | null; onClose: () => void }) {
   if (!place) return null
-  const links = mapLinks(place.address)
+  const fallbackLinks = mapLinks(place.address)
+  const links = {
+    naver: place.naverUrl ?? fallbackLinks.naver,
+    kakao: place.kakaoUrl ?? fallbackLinks.kakao,
+  }
   return (
     <div className="sheet-backdrop" role="presentation" onMouseDown={onClose}>
       <section className="place-sheet" role="dialog" aria-modal="true" aria-labelledby="place-title" onMouseDown={(event) => event.stopPropagation()}>
