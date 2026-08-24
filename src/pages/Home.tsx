@@ -2,8 +2,15 @@ import { ArrowRight, CloudSun, MapPin, PawPrint, Sparkles, Users } from 'lucide-
 import { trip, tripDays } from '../data/trip'
 import { getTripStatus } from '../utils/date'
 import type { Tab } from '../components/BottomNav'
+import type { DayNumber } from '../types'
 
-export function Home({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
+export function Home({
+  onNavigate,
+  onScheduleDay,
+}: {
+  onNavigate: (tab: Tab) => void
+  onScheduleDay: (day: DayNumber) => void
+}) {
   const status = getTripStatus()
   return (
     <div className="page home-page">
@@ -30,7 +37,7 @@ export function Home({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
         <div className="section-title"><div><span className="eyebrow">OUR ROUTE</span><h2>3일의 여행</h2></div><button onClick={() => onNavigate('schedule')}>전체 일정 <ArrowRight size={16} /></button></div>
         <div className="route-list">
           {tripDays.map((day) => (
-            <button key={day.day} onClick={() => onNavigate('schedule')}>
+            <button key={day.day} onClick={() => onScheduleDay(day.day)}>
               <span className="day-stamp"><b>DAY {day.day}</b><small>{day.date.slice(5).replace('-', '.')} {day.weekday}</small></span>
               <span className="route-copy"><strong>{day.theme}</strong><small>{day.route}</small></span>
               <ArrowRight size={18} />

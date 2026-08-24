@@ -33,11 +33,15 @@ export default function App() {
   }
 
   const showPlaceById = (id: string) => setSelectedPlace(places.find((place) => place.id === id) ?? null)
+  const showScheduleDay = (day: DayNumber) => {
+    setSelectedDay(day)
+    navigate('schedule')
+  }
 
   return (
     <main className="app-shell">
       <div className="app-content">
-        {tab === 'home' && <Home onNavigate={navigate} />}
+        {tab === 'home' && <Home onNavigate={navigate} onScheduleDay={showScheduleDay} />}
         {tab === 'schedule' && <Schedule selectedDay={selectedDay} onDayChange={setSelectedDay} onPlace={showPlaceById} />}
         {tab === 'places' && <Places onPlace={setSelectedPlace} />}
         {tab === 'preparation' && <Preparation />}
