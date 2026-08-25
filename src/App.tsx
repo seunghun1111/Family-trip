@@ -41,7 +41,7 @@ export default function App() {
   return (
     <main className="app-shell">
       <div className="app-content">
-        {tab === 'home' && <Home onNavigate={navigate} onScheduleDay={showScheduleDay} />}
+        {tab === 'home' && <Home onNavigate={navigate} onScheduleDay={showScheduleDay} onPlace={showPlaceById} />}
         {tab === 'schedule' && <Schedule selectedDay={selectedDay} onDayChange={setSelectedDay} onPlace={showPlaceById} />}
         {tab === 'places' && <Places onPlace={setSelectedPlace} />}
         {tab === 'preparation' && <Preparation />}

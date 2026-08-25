@@ -9,6 +9,8 @@ export type ScheduleItem = {
   notes?: string[]
   placeId?: string
   placeIds?: string[]
+  badge?: string
+  kind?: 'activity' | 'move' | 'meal' | 'rest'
 }
 
 export type TripDay = {
@@ -17,10 +19,15 @@ export type TripDay = {
   weekday: string
   theme: string
   route: string
+  forecast: string
+  temperature: string
+  weatherTone: 'shower' | 'sun' | 'rain'
+  weatherNote: string
+  fallback: string
   items: ScheduleItem[]
 }
 
-export type PlaceCategory = '숙소' | '관광' | '식당' | '카페' | '마트'
+export type PlaceCategory = '숙소' | '관광' | '식당' | '카페' | '마트' | '편의점'
 
 export type Place = {
   id: string
@@ -34,6 +41,9 @@ export type Place = {
   summary: string
   tips: string[]
   caution?: string
+  openHours?: string
+  phone?: string
+  label?: string
   naverUrl?: string
   kakaoUrl?: string
 }
