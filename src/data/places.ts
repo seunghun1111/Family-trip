@@ -10,8 +10,8 @@ export const places: Place[] = [
     summary: '더위가 오기 전 입구와 그늘진 숲길을 가볍게 걷는 코스.', tips: ['입장료·주차료 무료', '등산보다 숲길과 가족사진 중심', '리드줄·배변봉투·물을 준비'], caution: '법당 내부는 반려견 동반이 어렵고, 시설별 이용조건은 현장에서 달라질 수 있어요.',
   },
   {
-    id: 'oriduck', category: '식당', icon: '🦆', name: '오리덕', shortAddress: '경기 남양주시 화도읍', address: '경기 남양주시 화도읍 북한강로1570번길 94 2~3층', day: 1, time: '11:00 ~ 12:30', openHours: '일요일 11:00~22:00 · 20:30 라스트오더', phone: '031-559-5592', label: '예약 권장',
-    summary: '북한강을 보며 즐기는 첫날의 오리 요리 점심.', tips: ['반려동물 동반 가능', '가족 식사와 주차가 편리', '11시 첫 타임 방문'], caution: '반려견 동반 좌석을 예약하고 예방접종 확인이 가능한 서류 또는 앱을 준비하세요.', naverUrl: 'https://naver.me/xbA5yQ5C', kakaoUrl: 'https://place.map.kakao.com/458937080',
+    id: 'phonamri', category: '식당', icon: '🍜', name: '북한강 포남리', shortAddress: '경기 남양주시 화도읍', address: '경기 남양주시 화도읍 북한강로 1627', day: 1, time: '11:00 ~ 12:30', openHours: '일요일 11:00~21:00', phone: '0507-1317-7183', label: '반려동물 동반',
+    summary: '북한강 드라이브 길에서 쌀국수와 반쎄오를 즐기는 첫날 점심.', tips: ['반려동물 동반 가능', '쌀국수·반쎄오 등 베트남 음식', '주차 가능'], caution: '방문 전 반려견 동반 가능 좌석과 당일 영업시간을 확인하세요.', naverUrl: 'https://map.naver.com/p/search/%EB%B6%81%ED%95%9C%EA%B0%95%20%ED%8F%AC%EB%82%A8%EB%A6%AC',
   },
   {
     id: 'gangga', category: '식당', icon: '🥘', name: '강가추어탕', shortAddress: '강원 홍천군 서면', address: '강원 홍천군 서면 한서로 883', day: 1, time: '18:10 포장 픽업', openHours: '포장 전 당일 영업 확인', label: '포장',
@@ -51,7 +51,7 @@ export const places: Place[] = [
   },
   {
     id: 'hanaro-dumi', category: '마트', icon: '🛒', name: '하나로마트 서홍천농협두미지점', shortAddress: '강원 홍천군 서면', address: '강원 홍천군 서면 팔봉산로 545', day: 1, time: '13:10 ~ 14:10 · 1순위', label: '장보기 1순위',
-    summary: '첫날 오리덕 식사 후 숙소로 이동하며 가족 식재료와 음료를 한 번에 준비할 장보기 1순위.', tips: ['첫날 장보기 1순위', '저녁 2번·아침 2번 먹을 양을 한 번에 준비', '냉장·냉동식품은 마지막에 담기'], caution: '방문 전 네이버지도에서 당일 영업시간을 확인하세요.', naverUrl: 'https://naver.me/GUTWHPFr',
+    summary: '첫날 북한강 포남리 식사 후 숙소로 이동하며 가족 식재료와 음료를 한 번에 준비할 장보기 1순위.', tips: ['첫날 장보기 1순위', '저녁 2번·아침 2번 먹을 양을 한 번에 준비', '냉장·냉동식품은 마지막에 담기'], caution: '방문 전 네이버지도에서 당일 영업시간을 확인하세요.', naverUrl: 'https://naver.me/GUTWHPFr',
   },
   {
     id: 'hanaro', category: '마트', icon: '🛒', name: '용문농협 하나로마트 단월점', shortAddress: '경기 양평군 단월면', address: '경기 양평군 단월면 보룡길 90', day: 1, time: '13:10 ~ 14:10 · 선택', openHours: '08:00~18:00로 안내 · 당일 재확인', phone: '031-773-0258', label: '숙소 근처',
@@ -59,7 +59,7 @@ export const places: Place[] = [
   },
   {
     id: 'hanaro-seorak', category: '마트', icon: '🛒', name: '가평군농협 하나로마트 설악점', shortAddress: '경기 가평군 설악면', address: '경기 가평군 설악면 신천중앙로 112', day: 1, time: '13:10 ~ 14:10 · 대안', openHours: '매일 09:00~21:00', phone: '031-585-8136', label: '장보기 대안',
-    summary: '오리덕에서 숙소로 이동하는 길에 넉넉하게 장보기 좋은 선택지.', tips: ['365일 운영 안내', '신선식품·음료·가족 간식을 한 번에 준비', '냉장 보관 품목은 마지막에 담기'], naverUrl: 'https://naver.me/FUhsaVph',
+    summary: '북한강 포남리에서 숙소로 이동하는 길에 넉넉하게 장보기 좋은 선택지.', tips: ['365일 운영 안내', '신선식품·음료·가족 간식을 한 번에 준비', '냉장 보관 품목은 마지막에 담기'], naverUrl: 'https://naver.me/FUhsaVph',
   },
   {
     id: 'seven-eleven-caravan-papa', category: '편의점', icon: '🏪', name: '세븐일레븐 양평카라반파파점', shortAddress: '경기 양평군 단월면', address: '경기 양평군 단월면 석산로 1413', label: '숙소 근처',
